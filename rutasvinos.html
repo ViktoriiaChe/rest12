@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Blog Ruta del vino</title>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/blog.css">
+    <link rel="stylesheet" href="Style/detalleblog.css">
+    <script src="jQuery/jquery-3.7.1.min.js"></script>
+    <script src="JS/js.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $(".blogcabecera").mouseover(function () {
+                $(".blogarticle").css("background", "#fff");
+                $(".blogartic").slideDown(2000);
+            })
+        })
+
+
+    </script>
+
+    <style>
+        .blogcabecera {
+            background: url(image/fotos/vino-ribera.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: initial;
+        }
+
+        .blogarticle {
+            background-color: transparent;
+        }
+
+        .blogartic {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mostrar_nav"> <!-- para menu hamburguesa -->
+
+    </div>
+    <!-- items del menu hamburguesa -->
+    <nav id="nav_menu">
+        <ul class="menu">
+            <li><a href="index.html">Nosotros</a></li>
+            <li><a href="carta.html">La Carta</a></li>
+            <li><a href="barra.html">La Barra</a></li>
+            <li><a href="reserva.html">Reservas</a></li> <!-- form -->
+            <li><a href="blog.html">El Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+
+        </ul>
+
+    </nav>
+    <!-- pagina principal del restaurante -->
+    <header>
+        <h1>Ruta del vino de Ribera del Duero</h1>
+    </header>
+    <div class="blogcabecera">
+        <!-- tendra una img de fondo desde css -->
+    </div>
+    <section id="cuerpo" class="blogarticle">
+
+
+        <article class="blogartic">
+            <h2 class="blog-tit">Nuestro restaurante en la prensa</h2>
+            <p>Nuestros compañeros del blog de gastronomía Directo al Paladar han publicado una serie de posts que nos
+                llevan a conocer en profundidad las posibilidades que nos ofrece la comarca de Ribera del Duero para los
+                amantes del enoturismo.</p>
+            <p>El valle que recorre el río Duero abarca una fértil franja en la que se producen los vinos bajo la
+                D.O.Ribera del Duero. Estas tierras se sitúan en la meseta norte y en la confluencia de cuatro
+                provincias integradas en la Comunidad Autónoma de Castilla y León: Burgos, Segovia, Soria y Valladolid.
+            </p>
+            
+            <img src="image/fotos/cava-extremeno5.jpg" alt="Cava 5">
+
+            <p>El río Duero es el eje que une a más de 100 pueblos extendidos a lo largo de una franja vitícola de unos
+                115 km de longitud y 35 de anchura. Es una tierra que ofrece muchas posibilidades para organizar una
+                escapada enoturística perfecta.</p>
+            <p>En esta serie especial dedicada a una de las denominaciones de origen de vinos españoles más conocidas
+                mundialmente, se tratan diversos temas que pueden sernos de mucha utilidad tanto para los visitantes que
+                hacen sus primeros pasos en las rutas del vino, como para los más experimentados.</p>
+
+            <p>En el capítulo de organización, nos dan pautas para organizar una visita a una bodega y también nos dan
+                la referencia de algunas de las bodegas más singulares de la comarca ya sea por su arquitectura, su
+                historia o su sistema de producción.</p>
+
+            <p>
+                Si vas a hacer tu primera visita a una tierra de vinos, te interesará saber que puedes hacer un curso de
+                cata y nuestros colegas nos asesoran para elegirlo correctamente. Tanto en la visita como en la cata,
+                tendremos la oportunidad de conocer y reconocer los distintos vinos de la D.O. Ribera del Duero.</p>
+                <img src="image/fotos/vino-ribera.jpg" alt="Vino Ribera">
+
+            <p>Y cuando se habla de buenos vinos y de una comarca de largas tradiciones, no podremos dejar de lado su
+                gastronomía. En esta serie nos sugieren las diez comidas imprescindibles de la Ribera del Duero, entre
+                ellas el famoso cordero lechal, las patatas a la importancia o la auténtica sopa de ajo de la Ribera del
+                Duero.
+            </p>
+
+            <p>
+                Es que un viaje sin pasar por la mesa, pierde parte del encanto. De hecho, la zona de Ribera tiene otro
+                gran atractivo que son sus fiestas gastronómicas donde el maridaje entre los productos de la tierra y
+                los vinos se da naturalmente.
+            </p>
+            <p>
+                En la zona de la D.O. Ribera del Duero encontraremos pueblos tan atractivos como Peñafiel (y su castillo con forma de barco), o ciudades como Valladolid o Burgos con gran patrimonio para conocer. Para alojarnos tendremos una amplia variedad de opciones, desde casas rurales, hoteles urbanos, monasterios o grandes residencias señoriales de la Edad Media perfectamente acondicionadas. Algunas, incluso, hacen gala de una variadísima oferta de servicios de spa basada en las propiedades de la uva: la vinoterapia.
+
+            </p>
+            <p>
+                Una ruta del vino que ofrece cultura en todas sus variantes: patrimonio histórico y monumental, naturaleza, gastronomía, salud y... sus inolvidables vinos.
+            </p>
+
+            <p><a id="ir_reserva" href="reserva.html">Reserve Ahora</a> su mesa y desde llevar por los sentidos</p>
+
+            <a id="blog_regresar" href="blog.html">Indice Blog</a>
+
+        </article>
+    </section>
+
+    <section id="blog-rrss">
+        <div id="mas">
+            <!-- para el simbolo mas -->
+        </div>
+        <div id="menos">
+            <!-- para el simbolo menos -->
+        </div>
+
+
+        <!-- contenedor para las redes sociales -->
+        <div id="redes">
+            <p>Compartelo en tus redes sociales</p>
+            <a href="https://es-es.facebook.com/" target="_blank"><img class="fb" id="fb"
+                    src="image/Redes sociales/facebook.png"></a>
+
+            <a href="https://www.instagram.com/" target="_blank"><img class="inst" id="inst"
+                    src="image/Redes sociales/instagram.png"></a>
+
+            <a href="https://www.pinterest.es/" target="_blank"><img class="pin" id="pin"
+                    src="image/Redes sociales/pinterest.png"></a>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <a href="#" target="_blank" title="Ejemplo Menu Vertical Responsive">Ejemplo Menu Vertical</a>
+
+    </footer>
+
+</body>
+
+</html>

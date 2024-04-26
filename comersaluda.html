@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Blog Comer Saludable</title>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/blog.css">
+    <link rel="stylesheet" href="Style/detalleblog.css">
+    <script src="jQuery/jquery-3.7.1.min.js"></script>
+    <script src="JS/js.js"></script>
+
+   
+    <script>
+      
+        $(document).ready(function () {
+            $(".blogcabecera").mouseover(function () {
+                $(".blogarticle").css("background", "#fff");
+                $(".blogartic").slideDown(2000);
+            })
+
+              
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 700) {
+            $("#fotop").css("display","block");
+        }else{
+            $("#fotop").mouseout(function(){
+                $(this).fadeOut(1000);
+            });
+        }
+    })
+   
+
+
+           
+})
+
+
+    </script>
+
+    <style>
+        .blogcabecera {
+            background: url(image/fotos/blog3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: initial;
+        }
+
+        .blogarticle {
+            background-color: transparent;
+        }
+
+        .blogartic {
+            display: none;
+        }
+
+        .blogartic p {
+            margin: 2px;
+            padding: 5px;
+        }
+
+        #fotop {
+            display: none;
+        }
+
+    
+
+    </style>
+
+</head>
+
+<body>
+    <div id="mostrar_nav"> <!-- para menu hamburguesa -->
+
+    </div>
+    <!-- items del menu hamburguesa -->
+    <nav id="nav_menu">
+        <ul class="menu">
+            <li><a href="index.html">Nosotros</a></li>
+            <li><a href="carta.html">La Carta</a></li>
+            <li><a href="barra.html">La Barra</a></li>
+            <li><a href="reserva.html">Reservas</a></li> <!-- form -->
+            <li><a href="blog.html">El Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+
+        </ul>
+
+    </nav>
+    <!-- pagina principal del restaurante -->
+    <header>
+        <h1>Comer saludable fuera de casa</h1>
+    </header>
+    <div class="blogcabecera">
+        <!-- tendra una img de fondo desde css -->
+    </div>
+    <section id="cuerpo" class="blogarticle">
+
+
+        <article class="blogartic">
+            <h2 class="blog-tit">Secretos para comer saludable fuera de casa</h2>
+            <p class="par">Tal vez piensas que comer fuera de casa y comer saludable no es posible. De hecho, salir a
+                comer es una de las razones principales que explican porque no se logra mantener buenos hábitos de
+                alimentación.</p>
+
+            <p class="par">Pero, tengo buenas noticias que darte: si es posible comer mejor y seguir disfrutando de
+                aquellos alimentos que nos encantan (y que no comemos todos los días). Con un poco de conocimiento, tú
+                puedes transformar esa bomba calórica de restaurante en una opción más saludable.</p>
+
+            <p class="par">Si estás a favor de que hay que controlar lo que se come, pero también es importante
+                disfrutar los alimentos, no te puedes perder este artículo.</p>
+            <blockquote>
+                <p class="par">
+                    “Lo bonito de viajar y comer…esta en disfrutar el momento “</p>
+                <p class="par">Ferran Adrià</p>
+            </blockquote>
+
+            <p class="par">
+                Antes de empezar quiero que te imagines en esta escena por unos segundos:
+            </p>
+         
+
+            <p class="par">
+                Es tu segundo día tratando de comer más saludable. Ayer lograste incluir una porción de verduras y cenar
+                ligero. En verdad quieres adelgazar esos kilos extras que están estrangulando tu bienestar.
+            </p class="par">
+            <p class="par">Entras al restaurante a la hora acordada, miras a tu alrededor (se escucha el murmullo de las
+                personas conversando y el sonido de los cubiertos en los platos). Todas las mesas están llenas, piensas
+                que la comida seguramente debe ser muy buena. Pero tus pensamientos te distraen por el hambre que
+                tienes.</p>
+            <p class="par">Encuentras la mesa de tus amigos, todos estaban esperándote. Saludas te disculpas por el
+                retraso y tomas tu lugar. Dentro de ti ruegas que milagrosamente el restaurante tenga un menú especial
+                de “dieta” con platillos ligeros.</p>
+
+                <figure id="fotop"><img src="image/fotos/alimentacionsana.jpg"></figure>
+            <p class="par">Te equivocas, se trata de una pizzería italiana y la batalla está perdida. Sientes que
+                estarías totalmente fuera de lugar si pides una botella de agua y una ensalada (que vergüenza).</p>
+            <p class="par">Tratas de pensar rápido antes de que vengan a tomar la orden, pero a la hora de pedir, tu
+                única salida es: “Quiero una coca cola y una pizza con extra queso y peperonni, bueno… que sean dos por
+                favor ”</p>
+            <p class="par">Misión no cumplida.</p>
+
+            <p class="par">Renuncias a la “dieta” y vuelves a los mismos hábitos insaludables de toda la vida.</p>
+            <p class="par">¿Te ha pasado algo parecido?</p>
+            <p class="par">Si estás tratando de adelgazar o simplemente quieres mantener tu peso, comer fuera no es tu
+                mejor opción. Sabes que es difícil controlarte y además quieres disfrutar de esos “excesos” ocasionales.
+            </p>
+            <p class="par">Te entiendo.</p>
+            <p class="par">Comer fuera de casa se ha convertido en un momento para desconectar, para aprovechar el
+                tiempo con los amigos o la familia y sobre todo para comer cosas ricas.</p>
+            <p class="par">Probablemente no tienes la oportunidad de comer en casa todos los días y tu rutina te orilla
+                a comer en un restaurante o en la cafetería de forma rutinaria.</p>
+            <p class="par">En ambos casos, seleccionar correctamente tus alimentos es indispensable para tener buenos
+                hábitos alimenticios.</p>
+
+            <p><a id="ir_reserva" href="reserva.html">Reserve Ahora</a> su mesa y desde llevar por los sentidos</p>
+
+            <a id="blog_regresar" href="blog.html">Indice Blog</a>
+
+        </article>
+    </section>
+
+    <section id="blog-rrss">
+        <div id="mas">
+            <!-- para el simbolo mas -->
+        </div>
+        <div id="menos">
+            <!-- para el simbolo menos -->
+        </div>
+
+
+        <!-- contenedor para las redes sociales -->
+        <div id="redes">
+            <p>Compartelo en tus redes sociales</p>
+            <a href="https://es-es.facebook.com/" target="_blank"><img class="fb" id="fb"
+                    src="image/Redes sociales/facebook.png"></a>
+
+            <a href="https://www.instagram.com/" target="_blank"><img class="inst" id="inst"
+                    src="image/Redes sociales/instagram.png"></a>
+
+            <a href="https://www.pinterest.es/" target="_blank"><img class="pin" id="pin"
+                    src="image/Redes sociales/pinterest.png"></a>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <a href="#" target="_blank" title="Ejemplo Menu Vertical Responsive">Ejemplo Menu Vertical</a>
+
+    </footer>
+
+
+
+</body>
+
+</html>

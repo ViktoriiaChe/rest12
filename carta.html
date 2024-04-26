@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Carta</title>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Style/flexboxgrid.min.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/carta.css">
+    <script src="jQuery/jquery-3.7.1.min.js"></script>
+    <script src="JS/js.js"></script>
+
+</head>
+<style>
+    footer {
+        display: flex;
+        justify-content: space-around;
+        border-top: 1px solid rgba(255, 255, 255, .1);
+        font-size: .8em;
+        margin-top: 2em;
+
+    }
+
+    #redes {
+        text-align: center;
+        width: 30%;
+        height: 30%;
+        transition: all .1s;
+        z-index: 1001;
+    }
+
+    #redes p {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    #redes a {
+        text-decoration: none;
+    }
+
+    .fb,
+    .inst,
+    .pin {
+        height: 40px;
+        display: inline-block;
+        margin-left: 2em;
+    }
+
+    /*animacion de los botones de las redes sociales*/
+    .fb:hover,
+    .inst:hover,
+    .pin:hover {
+        transform: rotate(360deg);
+        transition: all 3s ease-out;
+    }
+</style>
+
+<body>
+    <section id="cabeceraprincipal">
+
+
+        <div id="mostrar_nav"> <!-- para menu hamburguesa -->
+
+        </div>
+        <!-- items del menu hamburguesa -->
+        <nav id="nav_menu">
+            <ul class="menu">
+                <li><a href="index.html">Nosotros</a></li>
+                <li><a href="carta.html">La Carta</a></li>
+                <li><a href="carta2.html">La Carta2</a></li>
+                <li><a href="barra.html">La Barra</a></li>
+                <li><a href="reserva.html">Reservas</a></li> <!-- form -->
+                <li><a href="blog.html">El Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1 id="h1">Degusta nuestros manjares...</h1>
+        </header>
+    </section>
+    <article id="carta">
+
+        <section class="container">
+            <header>
+                <nav>
+                    <a href="#abrebocas">Abre Bocas</a>
+                    <a href="#paracontinuar">Para continuar</a>
+                    <a href="#monmar">Montaña y Mar</a>
+                    <a href="#dulces">Un dulce momento</a>
+                </nav>
+            </header>
+            <!-- Los primeros platos -->
+            <h2 id="abrebocas" class="titulocarta">Abre Bocas...</h2>
+            <article class="estilocarta">
+                <div id="textoarticulo">
+                    <div id="p1" class="platos">
+                        <h3>Tartar de Atun</h3>
+                        <p>Aqui ira la descripcion del plato sera una descripcion con los ingredientes y la preparacion.
+                        </p>
+                    </div>
+                    <div id="p2" class="platos">
+                        <h3>Nombre de plato 2</h3>
+                        <p>Aqui ira la descripcion del plato sera una descripcion con los ingredientes y la preparacion.
+                        </p>
+                    </div>
+                    <div id="p3" class="platos">
+                        <h3>Nombre de plato 3</h3>
+                        <p>Aqui ira la descripcion del plato sera una descripcion con los ingredientes y la preparacion.
+                        </p>
+                    </div>
+
+                </div>
+                <div id="fotoarticulo" class="estilofoto">
+                    <img src="image/abreboca1.jpg" alt="f1">
+
+                </div>
+            </article>
+            <!-- segundo plato -->
+            <h2 id="paracontinuar" class="titulocarta">Para Continuar...</h2>
+            <article class="estilocarta">
+                <div id="textoarticulo2">
+                    <div id="p21" class="platos">
+                        <h3>Segundo plato 1</h3>
+                        <p>Aqui ira la descripcion del plato sera una descripcion con los ingredientes y la preparacion.
+                        </p>
+                    </div>
+                    <div id="p22" class="platos">
+                        <h3>Segundo plato 2</h3>
+                        <p>Aqui ira la descripcion del plato sera una descripcion con los ingredientes y la preparacion.
+                        </p>
+                    </div>
+                    <div id="p23" class="platos">
+                        <h3>Segundo plato 3</h3>
+                        <p>Aqui ira la descripcion del plato sera una descripcion con los ingredientes y la preparacion.
+                        </p>
+                    </div>
+                    <div id="p24" class="platos">
+                        <h3>Segundo plato 4</h3>
+                        <p>Aqui ira la descripcion del plato sera una descripcion con los ingredientes y la preparacion.
+                        </p>
+                    </div>
+                </div>
+                <div id="fotoarticulo2" class="estilofoto">
+                    <img src="image/continuar1.jpg" alt="c1">
+
+                </div>
+            </article>
+            <!-- montaña y mar -->
+            <h2 id="monmar" class="titulocarta">Montaña y Mar</h2>
+            <article class="estilocarta">
+                <div id="textoarticulo3">
+                    <div id="p31" class="platos">
+                        <h3>Tercero plato 1</h3>
+                        <p>Aqui ira la descripcion del plato sera una descripcion con los ingredientes y la preparacion.
+                        </p>
+                    </div>
+                    <div id="p32" class="platos">
+                        <h3>Tercero plato 2</h3>
+                        <p>Aqui ira la descripcion del plato sera una descripcion con los ingredientes y la preparacion.
+                        </p>
+                    </div>
+                    <div id="p33" class="platos">
+                        <h3>Tercero plato 3</h3>
+                        <p>Aqui ira la descripcion del plato sera una descripcion con los ingredientes y la preparacion.
+                        </p>
+                    </div>
+
+                </div>
+                <div id="fotoarticulo3" class="estilofoto">
+                    <img src="image/monmar1.jpg" alt="m1">
+
+                </div>
+            </article>
+
+            <!-- postres -->
+            <h2 id="dulces" class="titulocarta">Dulces momentos...</h2>
+            <article class="estilocarta">
+                <div id="textoarticulo4">
+                    <div id="p41" class="platos">
+                        <h3>Postres: plato 1</h3>
+                        <p>Aqui ira la descripcion del plato sera una descripcion con los ingredientes y la preparacion.
+                        </p>
+                    </div>
+                    <div id="p42" class="platos">
+                        <h3>Postres: plato 2</h3>
+                        <p>Aqui ira la descripcion del plato sera una descripcion con los ingredientes y la preparacion.
+                        </p>
+                    </div>
+                    <div id="p43" class="platos">
+                        <h3>Postres: plato 3</h3>
+                        <p>Aqui ira la descripcion del plato sera una descripcion con los ingredientes y la preparacion.
+                        </p>
+                    </div>
+                    <div id="p44" class="platos">
+                        <h3>Postres: plato 4</h3>
+                        <p>Aqui ira la descripcion del plato sera una descripcion con los ingredientes y la preparacion.
+                        </p>
+                    </div>
+
+                </div>
+                <div id="fotoarticulo4" class="estilofoto">
+                    <img src="image/postres1.jpg" alt="p1">
+
+                </div>
+            </article>
+
+        </section>
+
+    </article>
+    <section id="botonArriba">
+        <button type="button" id="botonA"><a href="#h1">Arriba</a></button>
+    </section>
+
+    <section class="volver">
+        <!-- he quitado el enlace para hacer el efecto desde js -->
+        <a href="#carta"><img src="image/cuchilleria.png" alt=""></a>
+
+    </section>
+
+
+    <footer id="foot2">
+
+        <div id="footerizq">
+            <p>Estamos en:</p>
+            <p>Direccion:</p>
+            <p>Telefono:</p>
+
+        </div>
+        <div id="footercentr">
+            <div id="redes">
+                <p>Compartelo en tus redes sociales</p>
+                <a href="https://es-es.facebook.com/" target="_blank"><img class="fb" id="fb"
+                        src="image/Redes sociales/facebook.png"></a>
+
+                <a href="https://www.instagram.com/" target="_blank"><img class="inst" id="inst"
+                        src="image/Redes sociales/instagram.png"></a>
+
+                <a href="https://www.pinterest.es/" target="_blank"><img class="pin" id="pin"
+                        src="image/Redes sociales/pinterest.png"></a>
+
+            </div>
+
+        </div>
+        <div id="footerder">
+            <a href="mapa.html" target="_blank">Mapa</a>
+
+        </div>
+        <!--  
+        <div>
+            <address>Calle de las Delicias, 10, Arganzuela, 28045 Madrid</address>
+
+            <h3>914 67 39 95</h3>
+        </div>
+
+        <div id="redes">
+            <p>Compartelo en tus redes sociales</p>
+            <a href="https://es-es.facebook.com/" target="_blank"><img class="fb" id="fb"
+                    src="image/Redes sociales/facebook.png"></a>
+
+            <a href="https://www.instagram.com/" target="_blank"><img class="inst" id="inst"
+                    src="image/Redes sociales/instagram.png"></a>
+
+            <a href="https://www.pinterest.es/" target="_blank"><img class="pin" id="pin"
+                    src="image/Redes sociales/pinterest.png"></a>
+
+        </div>
+
+
+        <div>
+            <h2>Nos puedes encontrar</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.216328215881!2d-3.6944333000000156!3d40.404058199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42262fc70a6c63%3A0xa0663f74717fa532!2sPatac%C3%B3n%20Pisao!5e0!3m2!1sru!2ses!4v1705074340200!5m2!1sru!2ses"
+                width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+-->
+        <!-- <a href="#" target="_blank" title="Ejemplo Menu Vertical Responsive">Ejemplo Menu Vertical</a> -->
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Reserva</title>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/form.css">
+    <script src="jQuery/jquery-3.7.1.min.js"></script>
+    <script src="JS/js.js"></script>
+
+</head>
+
+<body>
+
+
+    <div id="mostrar_nav">
+
+    </div>
+
+    <nav id="nav_menu">
+        <ul class="menu">
+            <li><a href="index.html">Nosotros</a></li>
+            <li><a href="carta.html">La Carta</a></li>
+            <li><a href="barra.html">La Barra</a></li>
+            <li><a href="reserva.html">Reservas</a></li>
+            <li><a href="blog.html">El Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+    </nav>
+
+    <header>
+        <h1>Nombre del restaurante</h1>
+    </header>
+    <main>
+        <div id="blogcabecera"> <!-- para imagen de la cabecera -->
+        </div>
+        <div id="titulo">
+            <h2>Contacta con nosotros</h2>
+        </div>
+        <div id="cuerpo" class="contacto">
+            <form action="#" method="post" id="contacform">
+
+                <p><label>Nombre</label><br>
+                    <input type="text" placeholder="Viktoriia" required>
+                </p>
+
+                <p><label>Apellidos</label><br>
+                    <input type="text" placeholder="Chernohor" required>
+                </p>
+
+                <p>
+                    <label>Email</label><br>
+                    <input type="text" placeholder="viktoriia.chernohor@gmail.com" required>
+                </p>
+
+                <p><label>Telefono</label><br>
+                    <input type="tel" placeholder="999999999" required>
+                </p>
+
+                <p><label id="tema">Tema</label><br>
+                    <select name="tema" required>
+                        <option value="Elige una option">Elige una option</option>
+                        <option value="Atencion al cliente" selected>Atencion al cliente</option>
+                        <option value="Alergenos">Alergenos</option>
+                        <option value="Marketing y prensa">Marketing y prensa</option>
+                        <option value="Administracion">Administracion</option>
+                        <option value="Proveedores">Proveedores</option>
+                        <option value="Empleo">Empleo</option>
+                        <option value="Otros">Otros</option>
+                    </select>
+                </p>
+
+                <p><label for="comentario">Tu comentario</label><br>
+                    <textarea name="comentario" id="comentario" cols="60" rows="5"></textarea>
+                </p>
+
+                <input type="checkbox" id="acepto" name="remember" required onclick="activarchecked2();">Acepto la <a
+                    href="Protección de datos.pdf" target="_blank">Politica de proteccion de
+                    datos</a>
+                <br>
+                <input type="submit" name="submit" value="Enviar" id="contcform" disabled="true"><br>
+
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <a href="#" target="_blank" title="Ejemplo Menu Vertical Responsive">Ejemplo Menu Vertical</a>
+    </footer>
+
+</body>
+
+</html>

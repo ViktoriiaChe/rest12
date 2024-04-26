@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturante</title>
+    <!--enlace para el favicon-->
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <!--<link rel="icon" href="favicon.ico" type="image/x-icon">-->
+    <!--enlazo la hoja de estilo-->
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/detalleblog.css">
+    <link rel="stylesheet" type="text/css" href="Style/cocteles.css">
+    <!--librería Jquery y archivo con mi javaScript-->
+    <script src="jQuery/jquery-3.7.1.min.js"></script>
+    <script src="JS/js.js"></script>
+    <style>
+        /**estilos para contenedores de los videos*/
+    #videos{
+        display: flex;
+     
+    }
+    .peli{
+        width: 35%;
+        height: 300px;
+        margin: .2em;
+        box-shadow: 1px 5px 10px white;
+    }
+
+    .content h3{
+        font-size: 1em;
+        margin-top: 1em;
+        text-align: center;
+        color: rgb(136, 91, 7);
+    }
+    </style>
+</head>
+
+<body>
+    <!--este contenedor albergará el icono del menú hamburguesa-->
+    <div id="mostrar_nav"></div>
+    <!--items del menú hamburguesa-->
+    <nav id="nav_menu">
+        <ul class="menu">
+            <li><a href="index.html">Nosotros</a></li>
+            <li><a href="carta.html">La Carta</a></li>
+            <li><a href="barra.html">La Barra</a></li>
+            <li><a href="reserva.html">Reservas</a></li>
+            <li><a href="blog.html">El blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <!--página principal del resturante introducción-->
+    <header>
+        <h1>Menú Vertical para diseño responsive</h1>
+    </header>
+
+
+    <!--contenedor del video
+        <section class="contenedor-caja-video">
+        <video class="caja-video" class="video" autoplay loop preload="auto" volume="50" controls>
+            <source src="video/brugal.mp4" type="video/mp4"/>
+        </video>
+        <video class="caja-video" class="video" autoplay loop preload="auto" volume="50" controls>
+            <source src="video/J_B.mp4" type="video/mp4"/>
+        </video>
+        <video class="caja-video" class="video" autoplay loop preload="auto" volume="50"controls>
+            <source src="video/Smirnoff.mp4" type="video/mp4"/>
+        </video>
+    </section>-->
+
+
+    <div class="content">
+        <h3>Disfrutas de Nuestros Cócteles</h3>
+        <section id="videos">
+            <video controls class="peli" poster="image/caipirinha-1.jpg">
+                <source src="video/brugal.mp4" type="video/mp4">
+            </video>
+
+            <video controls class="peli" poster="image/cocteles.jpg">
+                <source src="video/J_B.mp4" type="video/mp4">
+            </video>
+
+            <video controls class="peli" poster="image/bloody.jpg">
+                <source src="video/Smirnoff.mp4" type="video/mp4">
+            </video>
+        </section>
+
+    </div>
+    <div style="padding: 40px;">
+
+        <p><a id="ir_reserva" href="reserva.html">Reserve Ahora</a> su mesa y desde llevar por los sentidos</p>
+
+        <a id="blog_regresar" href="blog.html">Indice Blog</a>
+    </div>
+
+    <footer>
+        <a href="#" target="_blank" title="Ejemplo Menú Vertical Responsive">Ejemplo Menú Vertical</a>
+    </footer>
+</body>
+
+</html>

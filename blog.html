@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Blog</title>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/blog.css">
+    <script src="jQuery/jquery-3.7.1.min.js"></script>
+    <script src="JS/js.js"></script>
+</head>
+<style>
+    #foot2 {
+    display: flex;
+    font-size: 1.2em;
+}
+
+#foot2 div {
+    flex: 1;
+}
+
+#footerizq {
+    background-color: rgb(201, 133, 43);
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+
+}
+
+#footercentr {
+    background-color: rgb(201, 133, 43);
+    color: white;
+}
+
+#footerder {
+    background-color: rgb(201, 133, 43);
+    text-align: left;
+    color: white;
+    padding-top: 1em;
+    font-weight: bolder;
+}
+   /* footer {
+        display: flex;
+        justify-content: space-around;
+        border-top: 1px solid rgba(255, 255, 255, .1);
+        font-size: .8em;
+        margin-top: 2em;
+
+    }*/
+    
+    #redes {
+    text-align: center;
+    width: 30%;
+    height: 30%;
+    transition: all .1s;
+    z-index: 1001;
+}
+
+#redes p {
+    text-align: center;
+    font-weight: bold;
+}
+
+#redes a {
+    text-decoration: none;
+}
+
+.fb,
+.inst,
+.pin {
+    height: 40px;
+    display: inline-block;
+    margin-left: 2em;
+}
+
+/*animacion de los botones de las redes sociales*/
+.fb:hover,
+.inst:hover,
+.pin:hover {
+    transform: rotate(360deg);
+    transition: all 3s ease-out;
+}
+
+</style>
+
+<body>
+
+    <div id="mostrar_nav">
+
+    </div>
+    <nav id="nav_menu">
+        <ul class="menu">
+            <li><a href="index.html">Nosotros</a></li>
+            <li><a href="carta.html">La Carta</a></li>
+            <li><a href="barra.html">La Barra</a></li>
+            <li><a href="reserva.html">Reservas</a></li>
+            <li><a href="blog.html">El Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Menu Vertical para diseño responsive</h1>
+    </header>
+
+    <div id="cuerpot">
+        <h3>Notas de prensa</h3>
+    </div>
+    <!-- 1 div -->
+    <article id="cuerpob">
+
+        <div id="cuerpob1" class="cb">
+            <a href="nuevosenlacarta.html" class="enlaces">
+                <h4 id="titulosfect1">Nuevo en la carta</h4>
+            </a>
+        </div>
+
+        <!-- 2 div -->
+
+        <div id="cuerpob2" class="cb">
+            <a href="enlaprensa.html" class="enlaces">
+                <h4 id="titulosfect2">En la prensa</h4>
+            </a>
+        </div>
+
+        <!-- 3 div -->
+
+        <div id="cuerpob3" class="cb">
+            <a href="comersaluda.html" class="enlaces">
+                <h4 id="titulosfect3">Comer saludable</h4>
+            </a>
+        </div>
+
+        <!-- 4 div -->
+        <div id="cuerpob4" class="cb">
+            <a href="cocteles.html" class="enlaces">
+                <h4 id="titulosfect4">Cocteles</h4>
+            </a>
+        </div>
+
+        <!-- 5 div -->
+        <div id="cuerpob5" class="cb">
+            <a href="rutasvinos.html" class="enlaces">
+                <h4 id="titulosfect5">Ribera del Duero</h4>
+            </a>
+        </div>
+
+        <!-- 6 div -->
+        <div id="cuerpob6" class="cb">
+            <a href="cavaextremadura.html" class="enlaces">
+                <h4 id="titulosfect6">Cava Extreño</h4>
+            </a>
+        </div>
+
+    </article>
+
+
+    <footer id="foot2">
+        <div id="footerizq">
+            <p>Estamos en:</p>
+            <p>Direccion:</p>
+            <p>Telefono:</p>
+
+        </div>
+        <div id="footercentr">
+            <div id="redes">
+                <p>Compartelo en tus redes sociales</p>
+                <a href="https://es-es.facebook.com/" target="_blank"><img class="fb" id="fb"
+                        src="image/Redes sociales/facebook.png"></a>
+
+                <a href="https://www.instagram.com/" target="_blank"><img class="inst" id="inst"
+                        src="image/Redes sociales/instagram.png"></a>
+
+                <a href="https://www.pinterest.es/" target="_blank"><img class="pin" id="pin"
+                        src="image/Redes sociales/pinterest.png"></a>
+
+            </div>
+
+        </div>
+        <div id="footerder">
+            <a href="mapa.html" target="_blank">Mapa</a>
+
+        </div>
+        <!--  
+        <div>
+            <address>Calle de las Delicias, 10, Arganzuela, 28045 Madrid</address>
+
+            <h3>914 67 39 95</h3>
+        </div>
+
+        <div id="redes">
+            <p>Compartelo en tus redes sociales</p>
+            <a href="https://es-es.facebook.com/" target="_blank"><img class="fb" id="fb"
+                    src="image/Redes sociales/facebook.png"></a>
+
+            <a href="https://www.instagram.com/" target="_blank"><img class="inst" id="inst"
+                    src="image/Redes sociales/instagram.png"></a>
+
+            <a href="https://www.pinterest.es/" target="_blank"><img class="pin" id="pin"
+                    src="image/Redes sociales/pinterest.png"></a>
+
+        </div>
+
+
+        <div>
+            <h2>Nos puedes encontrar</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.216328215881!2d-3.6944333000000156!3d40.404058199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42262fc70a6c63%3A0xa0663f74717fa532!2sPatac%C3%B3n%20Pisao!5e0!3m2!1sru!2ses!4v1705074340200!5m2!1sru!2ses"
+                width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>-->
+      <!-- <a href="#" target="_blank" title="Ejemplo Menu Vertical Responsive">Ejemplo Menu Vertical</a>--> 
+    </footer>  
+
+</body>
+
+</html>

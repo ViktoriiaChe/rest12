@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Carta 2</title>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/carta2.css">
+    <script src="jQuery/jquery-3.7.1.min.js"></script>
+    <script src="JS/js.js"></script>
+    <script src="JS/carta2.js"></script>
+
+</head>
+
+<body>
+
+
+    <div id="mostrar_nav"> <!-- para menu hamburguesa -->
+
+    </div>
+    <!-- items del menu hamburguesa -->
+    <nav id="nav_menu">
+        <ul class="menu">
+            <li><a href="index.html">Nosotros</a></li>
+            <li><a href="carta.html">La Carta</a></li>
+            <li><a href="barra.html">La Barra</a></li>
+            <li><a href="reserva.html">Reservas</a></li> <!-- form -->
+            <li><a href="blog.html">El Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+
+        </ul>
+
+    </nav>
+    <!-- pagina principal del restaurante -->
+    <header>
+        <h1>Degusta nuestros manjares...(2)</h1>
+    </header>
+    <!-- codigo html realizacion de la carta a modo de fichas, en cada ficha tendre los platos de cada una de las fases, entrantes ... -->
+    <div id="efectocristal" class="efectocristal"></div>
+    <!-- estructura para pestañas de cada ficha-->
+    <section id="carta_cliente">
+        <ul class="tabs">
+            <li><a href="#tab1">Para Empezar...</a></li>
+            <li><a href="#tab2">Para Continuar...</a></li>
+            <li><a href="#tab3">Mar y Tierra...</a></li>
+            <li><a href="#tab4">Dulces Momentos...</a></li>
+            <li><a href="#tab5">En tu casa...</a></li>
+
+        </ul>
+        <!-- contenedor donde mostrare los pklatos de cada fase -->
+        <div class="tab_container">
+            <div id="che">
+
+                <p class="impuestos">Incluir I.V.A. <input type="checkbox" name="micheckbox" id="micheckbox"></p>
+
+                <p class="impuestos">Allergenos <input type="checkbox" name="micheckbox1" id="micheckbox1"></p>
+
+            </div>
+
+            <!-- contenedor de primeros platos -->
+            <div class="tab_contenido" id="tab1">
+
+                <p class="textocarta">Platos para empezar...</p>
+                <ol class="platosprecios">
+                    <li>
+                        <h3>Tartar de Atun <img src="image/allergenos/fish (1).png" alt="fish">
+                        </h3>
+
+                        <span id="tartar">9.99</span>€
+                    </li>
+                    <li>
+                        <h3>Calabacin Relleno <img src="image/allergenos/egg (1).png" alt="egg"></h3><span>12.50</span>€
+                    </li>
+                    <li>
+                        <h3>Pan Cristal y Jamon <img src="image/allergenos/gluten.png" alt="gluten"></h3>
+                        <span>7.99</span>€
+                    </li>
+
+                </ol>
+            </div>
+            <!-- contenedor de platos para continuar -->
+            <div class="tab_contenido" id="tab2">
+
+                <p class="textocarta">Para continuar...</p>
+                <ol class="platosprecios">
+                    <li>
+                        <h3>Pastel de cabracho <img src="image/allergenos/milk.png" alt="milk"></h3><span>15.70</span>€
+
+                    </li>
+                    <li>
+                        <h3>Tosta de Salmon <img src="image/allergenos/fish (1).png" alt="fish"></h3><span>18.50</span>€
+
+                    </li>
+                    <li>
+                        <h3>Solomillo de Jerez</h3><span>21.50</span>€
+
+                    </li>
+                    <li>
+                        <h3>Solomillo relleno continuara de Cebolla</h3><span>20.50</span>€
+
+                    </li>
+
+                </ol>
+            </div>
+            <!-- contenedor de platos para mar y tierra -->
+            <div class="tab_contenido" id="tab3">
+
+                <p class="textocarta">Mar y Tierra...</p>
+                <ol class="platosprecios">
+                    <li>
+                        <h3>Lubina <img src="image/allergenos/fish (1).png" alt="fish"></h3><span>18.50</span>€
+
+                    </li>
+                    <li>
+                        <h3>Marmitaco <img src="image/allergenos/fish (1).png" alt="fish"></h3><span>18.50</span>€
+
+                    </li>
+                    <li>
+                        <h3>Bacalao con Mejillones <img src="image/allergenos/fish (1).png" alt="fish"></h3>
+                        <span>22.50</span>€
+
+                    </li>
+
+                </ol>
+            </div>
+            <!-- contenedor de platos para dulces -->
+            <div class="tab_contenido" id="tab4">
+
+                <p class="textocarta">Dulces momentos...</p>
+                <ol class="platosprecios">
+                    <li>
+                        <h3>Arroz con leche <img src="image/allergenos/milk.png" alt="milk"></h3><span>8.50</span>€
+
+                    </li>
+                    <li>
+                        <h3>Tiramisu <img src="image/allergenos/milk.png" alt="milk"> <img
+                                src="image/allergenos/egg (1).png" alt="egg"></h3><span>9.00</span>€
+
+                    </li>
+                    <li>
+                        <h3>Filloas <img src="image/allergenos/milk.png" alt="milk"> <img
+                                src="image/allergenos/egg (1).png" alt="egg"> <img src="image/allergenos/gluten.png"
+                                alt=""></h3><span>7.50</span>€
+
+                    </li>
+                    <li>
+                        <h3>Pudin <img src="image/allergenos/milk.png" alt="milk"> <img
+                                src="image/allergenos/egg (1).png" alt="egg"> <img src="image/allergenos/gluten.png"
+                                alt=""></h3><span>6.50</span>€
+
+                    </li>
+
+                </ol>
+            </div>
+            <!-- contenedor de platos para en tu casa -->
+
+            <div class="tab_contenido" id="tab5">
+
+                <p class="textocarta">Realiza tu pedido</p>
+                <form id="pedido" name="pedidos" action="#" method="post">
+
+                    <div class="divform">
+                        <h3 class="seccioncarta">Para empezar...</h3>
+
+                        <p><input type="checkbox" class="selector" name="plato1" id="1"><label
+                                class="nombreplato">Tartar de Atun <span class="precio">9.99</span>€</label><input
+                                type="number" name="cantidadplato1" id="cantidadplato1" min="1" max="10" value="" class="cantidaddeplato">
+                        </p>
+
+                        <p><input type="checkbox" class="selector" name="plato2" id="2"><label
+                                class="nombreplato">Calabacin Relleno <span class="precio">12.50</span>€</label><input
+                                type="number" name="cantidadplato2" id="cantidadplato2" min="1" max="10" value="" class="cantidaddeplato">
+                        </p>
+
+                        <p><input type="checkbox" class="selector" name="plato3" id="3"><label class="nombreplato">Pan
+                                Cristal y Jamon <span class="precio">7.99</span>€</label><input type="number" name="cantidadplato3" 
+                                id="cantidadplato3" min="1" max="10" value="" class="cantidaddeplato"></p>
+                    </div>
+
+                    <div class="divform">
+
+
+                        <h3 class="seccioncarta">Para Continuar...</h3>
+
+                        <p><input type="checkbox" class="selector" name="plato4" id="4"><label
+                                class="nombreplato">Pastel de cabracho <span class="precio">15.70</span>€</label><input
+                                type="number" name="cantidadplato4" id="cantidadplato4" min="1" max="10" value="" class="cantidaddeplato">
+                        </p>
+
+                        <p><input type="checkbox" class="selector" name="plato5" id="5"><label class="nombreplato">
+                                Tosta de Salmon <span class="precio">18.50</span>€</label><input type="number" name="cantidadplato5" 
+                                id="cantidadplato5" min="1" max="10" value="" class="cantidaddeplato"></p>
+
+                        <p><input type="checkbox" class="selector" name="plato6" id="6"><label
+                                class="nombreplato">Solomillo de Jerez <span class="precio">21.50</span>€</label><input
+                                type="number" name="cantidadplato6" id="cantidadplato6" min="1" max="10" value="" class="cantidaddeplato">
+                        </p>
+
+                        <p><input type="checkbox" class="selector" name="plato7" id="7"><label
+                                class="nombreplato">Solomillo relleno continuara de Cebolla <span
+                                    class="precio">20.50</span>€</label><input type="number" name="cantidadplato7" id="cantidadplato7"
+                                min="1" max="10" value="" class="cantidaddeplato"></p>
+                    </div>
+
+                    <div class="divform">
+                        <h3 class="seccioncarta">Mar y Tierra...</h3>
+
+                        <p><input type="checkbox" class="selector" name="plato8" id="8"><label
+                                class="nombreplato">Lubina <span class="precio">18.50</span>€</label><input
+                                type="number" name="cantidadplato8" id="cantidadplato8" min="1" max="10" value="" class="cantidaddeplato">
+                        </p>
+
+                        <p><input type="checkbox" class="selector" name="plato9" id="9"><label class="nombreplato">
+                                Marmitaco <span class="precio">18.50</span>€</label><input type="number" name="cantidadplato9" 
+                                id="cantidadplato9" min="1" max="10" value="" class="cantidaddeplato"> </p>
+
+                        <p><input type="checkbox" class="selector" name="plato10" id="10"><label
+                                class="nombreplato">Bacalao con Mejillones <span
+                                    class="precio">22.50</span>€</label><input type="number" name="cantidadplato10" id="cantidadplato10"
+                                min="1" max="10" value="" class="cantidaddeplato"></p>
+
+                    </div>
+
+                    <div class="divform">
+
+
+                        <h3 class="seccioncarta">Dulces Momentos...</h3>
+
+                        <p><input type="checkbox" class="selector" name="plato11" id="11"><label
+                                class="nombreplato">Arroz con leche <span class="precio">8.50</span>€</label><input
+                                type="number" name="cantidadplato11" id="cantidadplato11" min="1" max="10" value="" class="cantidaddeplato">
+                        </p>
+
+                        <p><input type="checkbox" class="selector" name="plato12" id="12"><label class="nombreplato">
+                                Tiramisu <span class="precio">9.00</span>€</label><input type="number" name="cantidadplato12" 
+                                id="cantidadplato12" min="1" max="10" value="" class="cantidaddeplato"> </p>
+
+                        <p><input type="checkbox" class="selector" name="plato13" id="13"><label
+                                class="nombreplato">Filloas <span class="precio">7.50</span>€</label><input
+                                type="number" name="cantidadplato13" id="cantidadplato13" min="1" max="10" value="" class="cantidaddeplato">
+                        </p>
+
+                        <p><input type="checkbox" class="selector" name="plato14" id="14"><label
+                                class="nombreplato">Pudin <span class="precio">6.50</span>€</label><input type="number" name="cantidadplato14" 
+                                id="cantidadplato14" min="1" max="10" value="" class="cantidaddeplato"></p>
+                    </div>
+
+                    <!-- boton que estara desactivado mientras el usuario no seleccione algun plato -->
+                    <p><input type="button" id="tramitarpedido" value="Tramitar Pedido" disabled></p>
+
+
+                    <section id="datoscliente">
+                        <p><label for="nombrecli">Nombre</label>
+                            <input type="text" id="nombrecli"   name="nombrecli" placeholder="Viktoriia" required>
+                        </p>
+                        <p><label for="apellidoscli">Apellidos</label>
+                            <input type="text" placeholder="Chernohor" id="apellidoscli" name="apellidoscli" required>
+                        </p>
+                        <p>
+                            <label>Email</label>
+                            <input type="email" placeholder="viktoriia.chernohor@gmail.com" id="mailcli"   required>
+                        </p>
+
+                        <p><label>Telefono</label>
+                            <input type="tel" placeholder="999999999" id="telcli"   required>
+                        </p>
+
+                        <p> <label for="fecha">Fecha</label>
+                            <input name="fecha" type="date" id="fecha"   name="fecha" max="2024-06-30" required>
+                        </p>
+
+                        <p><label for="hora">Hora recogida: </label> <input type="datetime" name="hora" id="hora"   required>
+
+                        </p>
+                        <p><input type="button" id="confirmarPedido" value="Confirmar Pedido" disabled></p>
+
+                    </section>
+                
+
+                </form>
+                <aside id="ejemplo" class="modal"><!--Contenedor-->
+                    <div id="detallecliente">
+                        <h2>Su pedido ha sido tramitado</h2>
+                        <p>Aqui tiene el resumen de su pedido</p>
+                        <section id="detallepedido">
+
+                        </section>
+                        
+                        <a href="#close" id="botoncerrar" title="Cerrar">Cerrar</a>
+                        <h2>Gracias por su visita</h2>
+                    </div>
+                </aside>
+
+                
+                <!--<button type="submit" class="tramitar" id="hacerpedido">Tramitar Pedido</button>
+                    <button type="reset" class="tramitar">Borrar Pedido</button>  -->
+
+                <!-- 
+                <form id="nombreform">
+                    <h3>Tus datos</h3>
+                    <p><label>Nombre</label><br>
+                        <input type="text" placeholder="Viktoriia" required>
+                    </p>
+
+                    <p><label>Apellidos</label><br>
+                        <input type="text" placeholder="Chernohor" required>
+                    </p>
+
+                    <p> <label for="fecha">Fecha y Hora Recogido</label>
+                        <input name="fecha" type="date" id="fecha" max="2024-06-30" required>
+
+                        <select name="hora" id="" required>
+
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="14:00">14:00</option>
+                            <option value="14:30">14:30</option>
+                            <option value="15:00">15:00</option>
+                            <option value="15:30">15:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                            <option value="21:30">21:30</option>
+                            <option value="22:00">22:00</option>
+                            <option value="22:30">22:30</option>
+
+                        </select>
+
+                    </p>
+
+                    <p>
+                        <label>Email</label><br>
+                        <input type="email" placeholder="viktoriia.chernohor@gmail.com" required>
+                    </p>
+
+                    <p><label>Telefono</label><br>
+                        <input type="tel" placeholder="999999999" required>
+                    </p>
+                    <button type="submit" class="tramitar" id="confirmar">Confirmar Pedido</button>
+                </form>  
+                 -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#" target="_blank" title="Ejemplo Menu Vertical Responsive">Ejemplo Menu Vertical</a>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Slider Sencillo</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        header, footer{
+            background-color: rgb(5, 5, 56);
+            color: white;
+            text-align: center;
+        }
+        div#slider{
+           overflow: hidden;
+        }
+        div#slider figure img{
+            width: 20%;
+            float: left;
+        }
+        div#slider figure{
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            text-align: left;
+            font-size: 0;
+            animation: 20s slidy infinite;
+           
+        }
+        /*codigo que define el movimiento*/
+        /*movimiento de las img a la izquierda*/
+        @keyframes slidy{
+            0%{
+                left: 0%;
+
+            }
+            20%{
+                left: 0%;
+                
+            }
+            25%{
+                left: -100%; 
+    
+            }
+            40%{
+     
+                left: -100%;
+            }
+            45%{
+                left: -200%;
+            }
+            50%{
+                left: -200%;
+            }
+            70%{
+                left: -200%;
+            }
+            75%{
+                left: -300%;
+            }
+            95%{
+                left: -300%;
+            }
+            100%{
+                left: -400%;
+            }
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ejemplo de Slider</h1>
+    </header>
+    <div id="slider">
+        <figure>
+            <img src="image/fotos/bloody.jpg" alt="Foto Bloody Mary">
+            <img src="image/fotos/cava-extremeno3.jpg" alt="Cava Extremeño">
+            <img src="image/fotos/cava-extremeno5.jpg" alt="Cava Extremeño 5">
+            <img src="image/fotos/caipirinha-1.jpg" alt="Caipirinha">
+            <img src="image/fotos/cocteles.jpg" alt="Todos los cocteles">
+        </figure>
+
+    </div>
+    <footer>
+        <h5>Ejemplo de Slider realizado en clase 18/01/2024</h5>
+    </footer>
+    
+</body>
+</html>

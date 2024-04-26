@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Barra</title>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/barra.css">
+    <script src="jQuery/jquery-3.7.1.min.js"></script>
+    <script src="JS/js.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script src="jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <link rel="stylesheet" href="jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" media="screen">
+</head>
+<style>
+    footer {
+        display: flex;
+        justify-content: space-around;
+        border-top: 1px solid rgba(255, 255, 255, .1);
+        font-size: .8em;
+        margin-top: 2em;
+
+    }
+    
+    #redes {
+    text-align: center;
+    width: 30%;
+    height: 30%;
+    transition: all .1s;
+    z-index: 1001;
+}
+
+#redes p {
+    text-align: center;
+    font-weight: bold;
+}
+
+#redes a {
+    text-decoration: none;
+}
+
+.fb,
+.inst,
+.pin {
+    height: 40px;
+    display: inline-block;
+    margin-left: 2em;
+}
+
+/*animacion de los botones de las redes sociales*/
+.fb:hover,
+.inst:hover,
+.pin:hover {
+    transform: rotate(360deg);
+    transition: all 3s ease-out;
+}
+
+</style>
+<body>
+
+    <div id="mostrar_nav">
+
+    </div>
+
+    <nav id="nav_menu">
+        <ul class="menu">
+            <li><a href="index.html">Nosotros</a></li>
+            <li><a href="carta.html">La Carta</a></li>
+            <li><a href="barra.html">La Barra</a></li>
+            <li><a href="reserva.html">Reservas</a></li>
+            <li><a href="blog.html">El Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+
+        </ul>
+
+    </nav>
+
+    <header>
+        <h1>...disfruta de nuestros mejores cocteles</h1>
+    </header>
+    <!-- cuerpo de la pagina barra -->
+    <section class="barra">
+        <article id="fila1">
+            <!-- coctel 1 -->
+            <div id="f1" class="ver">
+                <img src="image/barra1.jpg" alt="Margarita">
+                <div id="m1" class="mascara">
+                    <h2 id="t1">Margarita</h2>
+                    <ul>
+                        <li>Tequila blanco</li>
+                        <li>Zumo limon</li>
+                        <li>Hielo</li>
+                        <li>Sal</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- coctel2 -->
+            <div id="f2" class="ver">
+                <img src="image/barra2.jpg" alt="Gin-tonic">
+                <div id="m2" class="mascara">
+                    <h2 id="t2">Gin-Tonic</h2>
+                    <ul>
+                        <li>Ginebra</li>
+                        <li>Tonica</li>
+                        <li>Hielo</li>
+                        <li>Pepino</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- c3 -->
+            <div id="f3" class="ver">
+                <img src="image/barra3.jpg" alt="Margarita - Fresa">
+                <div id="m3" class="mascara">
+                    <h2 id="t3">Margarita <br> de Fresa</h2>
+                    <ul>
+                        <li>Tequila blanco</li>
+                        <li>Fresas, limon</li>
+                        <li>Hielo</li>
+                        <li>Angostura</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- fila 2 para el resto de cocteles -->
+        <article id="fila2">
+            <!-- c 4 -->
+            <div id="f4" class="ver">
+                <img src="image/barra4.jpg" alt="Martini">
+                <div id="m4" class="mascara">
+                    <h2 id="t4">Martini</h2>
+                    <ul>
+                        <li>Martini</li>
+                        <li>Ginebra</li>
+                        <li>Hielo</li>
+                        <li>Aceituna</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- c 5 -->
+            <div id="f5" class="ver">
+                <img src="image/barra5.jpg" alt="Cosmopolitan">
+                <div id="m5" class="mascara">
+                    <h2 id="t5">Cosmopolitan</h2>
+                    <ul>
+                        <li>Vodka</li>
+                        <li>Zumo arandanos</li>
+                        <li>Zumo limon</li>
+                        <li>Licor naranja</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- c 6 -->
+            <div id="f6" class="ver">
+                <img src="image/barra6.jpg" alt="Khalua-coke">
+                <div id="m6" class="mascara">
+                    <h2 id="t6">Khalua-coke</h2>
+                    <ul>
+                        <li>Khalua</li>
+                        <li>Coca Cola</li>
+                        <li>Hielo</li>
+                    </ul>
+                </div>
+            </div>
+
+        </article>
+
+    </section>
+    <!-- apartado para el boton que activara el video -->
+    <section id="boton">
+        <a href="https://www.youtube.com/watch?v=pVSTLRcCOys" class="visorvideo" title="Nuestro Barman">Professional
+            Barman</a>
+
+    </section>
+
+    <footer id="foot2">
+        <div id="footerizq">
+            <p>Estamos en:</p>
+            <p>Direccion:</p>
+            <p>Telefono:</p>
+
+        </div>
+        <div id="footercentr">
+            <div id="redes">
+                <p>Compartelo en tus redes sociales</p>
+                <a href="https://es-es.facebook.com/" target="_blank"><img class="fb" id="fb"
+                        src="image/Redes sociales/facebook.png"></a>
+
+                <a href="https://www.instagram.com/" target="_blank"><img class="inst" id="inst"
+                        src="image/Redes sociales/instagram.png"></a>
+
+                <a href="https://www.pinterest.es/" target="_blank"><img class="pin" id="pin"
+                        src="image/Redes sociales/pinterest.png"></a>
+
+            </div>
+
+        </div>
+        <div id="footerder">
+            <a href="mapa.html" target="_blank">Mapa</a>
+
+        </div>
+
+
+
+      <!--  <div>
+            <address>Calle de las Delicias, 10, Arganzuela, 28045 Madrid</address>
+
+            <h3>914 67 39 95</h3>
+        </div>
+
+        <div id="redes">
+            <p>Compartelo en tus redes sociales</p>
+            <a href="https://es-es.facebook.com/" target="_blank"><img class="fb" id="fb"
+                    src="image/Redes sociales/facebook.png"></a>
+
+            <a href="https://www.instagram.com/" target="_blank"><img class="inst" id="inst"
+                    src="image/Redes sociales/instagram.png"></a>
+
+            <a href="https://www.pinterest.es/" target="_blank"><img class="pin" id="pin"
+                    src="image/Redes sociales/pinterest.png"></a>
+
+        </div>
+
+
+        <div>
+            <h2>Nos puedes encontrar</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.216328215881!2d-3.6944333000000156!3d40.404058199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42262fc70a6c63%3A0xa0663f74717fa532!2sPatac%C3%B3n%20Pisao!5e0!3m2!1sru!2ses!4v1705074340200!5m2!1sru!2ses"
+                width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>--> 
+       <!-- <a href="#" target="_blank" title="Ejemplo Menu Vertical Responsive">Ejemplo Menu Vertical</a> -->  
+    </footer>
+
+</body>
+
+</html>

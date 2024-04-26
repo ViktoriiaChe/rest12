@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otro ejemplo de Slider</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(image/fotos/mojito.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #container {
+            width: 1000px;
+            overflow: hidden;
+            margin: 50px auto;
+            background-color: white;
+        }
+
+        body>header,
+        body>footer {
+            background-color: rgb(5, 32, 2);
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        /*header del contenedor*/
+        #container>header {
+            width: 800px;
+            margin: 40px auto;
+
+        }
+
+        #container>footer {
+            width: 800px;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        #container>header h1 {
+            text-align: center;
+            font: 100 60px/1.5 Verdana;
+
+        }
+
+        #container>header p {
+            font: 100 15px/1.5 Verdana;
+            text-align: justify;
+
+        }
+       
+
+        /*tamaño de las imagenes*/
+        img {
+            width: 350px;
+            height: 230px;
+        }
+        .primera{
+            animation: movimiento 30s linear infinite;
+        }
+        @keyframes movimiento{
+            0%{
+                margin-left: 0px;
+            }
+            100%{
+                margin-left: -2125px;
+            }
+        }
+        .fotoAnimada{
+            height: 233px;
+            width: 3550px;
+            margin-bottom: 80px;
+        }
+        .fotoAnimada img{
+            transition: all 0.5s ease;
+
+        }
+        .fotoAnimada img:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+            box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Otro ejemplo de Slider</h1>
+    </header>
+    <div id="container">
+        <header>
+            <h1>Ejemlo Animado</h1>
+            <p>Aqui pondremos un texto para llamar la atencion del usuario</p>
+        </header>
+        <div class="fotoAnimada">
+            <img class="primera" src="image/fotos/bloody.jpg" alt="Foto Bloody Mary">
+            <img src="image/fotos/cava-extremeno3.jpg" alt="Cava Extremeño">
+            <img src="image/fotos/cava-extremeno5.jpg" alt="Cava Extremeño 5">
+            <img src="image/fotos/caipirinha-1.jpg" alt="Caipirinha">
+            <img src="image/fotos/cocteles.jpg" alt="Todos los cocteles">
+            <img src="image/fotos/cava-extremeno4.jpg" alt="Cava Extremeño 4">
+            <img src="image/fotos/cava-1.png" alt="Cava1">
+            <img src="image/fotos/cava-extremeño6.jpg" alt="Cava Extremeño 6">
+        </div>
+        <footer>Ejemplo animacion Imagenes</footer>
+
+    </div>
+    <footer>
+        <h5>Ejemplo realizado n clase 18/01/2024</h5>
+    </footer>
+
+</body>
+
+</html>
